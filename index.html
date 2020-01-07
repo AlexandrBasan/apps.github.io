@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+	<!-- FontAwesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+	<title>Alexandr Basan | Public Person</title>
+
+	<!--<link rel="shortcut icon" href="https://static.parastorage.com/client/pfavico.ico" type="image/x-icon">-->
+	<link rel="icon" type="image/png" href="assets/images/ico.png" />
+
+
+	<!-- Google Tag Manager -->
+	<script>
+		(function(w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start': new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', '');
+	</script>
+	<!-- End Google Tag Manager -->
+	<style>
+		.title-separator {
+			color: #27C1FE;
+		}
+
+		ul {
+			list-style-type: none;
+			padding-left: 0px;
+		}
+
+		a {
+			text-decoration: none;
+			color: #27C1FE;
+		}
+
+		a:hover {
+			color: #27C1FE;
+			text-decoration: none;
+		}
+
+		.links a {
+			text-transform: uppercase;
+		}
+
+		#switch-lang {
+			font-size: 1.5em;
+			cursor: pointer;
+		}
+
+		@font-face {
+	    font-family: BebasNeue;
+	    src: url('assets/fonts/BebasNeue Regular.ttf') format('truetype');
+	    font-weight: normal;
+	    font-style: normal;
+		}
+
+		body {
+			font-family: BebasNeue;
+		}
+
+		h1 {
+			font-weight: bold;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<main role="main" class="container">
+		<div class="row">
+			<div class="col-8 col-sm-6">
+
+				<h1 class="mt-5" lang="en">Terms</h1>
+				<h4 class="" lang="en">Terms & Services</h2>
+
+				<p class="lead" lang="en">
+					Proalab Limited
+				</p>
+				<p class="lead" lang="en">
+					This is our official wibsite
+				</p>
+			</div>
+		</div>
+
+	</main>
+
+	<script>
+		// Check user's browser language
+		var userLang = navigator.language || navigator.userLanguage;
+		userLang = userLang.substr(0, 2)
+		//alert ("The language is: " + userLang);
+
+		// Default language value
+		if (userLang == null){
+    	userLang = 'en'
+		}
+
+		var lang = ["en", "ru"];
+
+		for (i = 0; i < lang.length; i++) {
+			if (lang[i] != userLang) {
+				$('[lang="' + lang[i] + '"]').hide();
+			}
+		}
+
+		// Change language button
+		$('#switch-lang').click(function() {
+			for (i = 0; i < lang.length; i++) {
+					$('[lang="' + lang[i] + '"]').toggle();
+			}
+		});
+	</script>
+
+</body>
+
+</html>
